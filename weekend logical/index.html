@@ -1,0 +1,56 @@
+<!doctype>
+<html>
+<head>
+<title> week calculation</title>
+</head>
+<style>
+ 
+</style>
+
+<body >
+
+
+
+
+<script>
+
+function armstrong(a){
+    var b=a;
+    var sum=0;
+    var count=0;
+   while(a>0){
+       let rem= a%10;
+         a=(a-rem)/10;
+         sum++;
+   }
+   while(b>0){
+       let rem=b%10;
+        b=(b-rem)/10;
+        count=count+(rem**sum);
+   }
+   return count;
+}
+function check(){
+    var c=1634;
+    var d=c;
+    var result= armstrong(d);
+    if(result==c){
+       console.log("it is a amstrong number");
+   }
+   else{
+       console.log("it is a not amstrong number");
+   }
+}
+check();
+
+/*----
+
+var a= new Date();
+var b= new Date("2015-04-23");
+var c=(a-b)/(1000*60*60*24);
+console.log(c);*/
+
+-----*/
+</script>
+
+</body>
